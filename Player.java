@@ -3,7 +3,7 @@ public class Player
 	private String name;
 	private int winCount;
 	private int playerLevel;
-	private String playerLev;
+	private String playerLev = "Amatuer";
 
 	public Player (String name, int winCount, int playerLevel)
 	{
