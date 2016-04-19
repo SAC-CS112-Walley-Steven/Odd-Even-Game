@@ -58,3 +58,4 @@ public class OddEvenGame{
 }
 
 //Hi Steven...please explain the objective and how you see this object of this class being used.
+// The objective is to maintain a player's stats and the level of gameplay that the player has achieved.
