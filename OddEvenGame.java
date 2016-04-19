@@ -11,7 +11,9 @@ public class OddEvenGame{
 
 		Player player = new Player ("Steve Walley", 0, 0);
 
-		System.out.printf("%s, %d, %s\n\n", player.getName(), player.getWinCount(), player.getPlayerLevel());
+		player.getPlayerLevel();
+
+		System.out.println(player.getPlayerStats());
 
 		do 
 		{
@@ -45,7 +47,7 @@ public class OddEvenGame{
 					System.out.println ("You lose");
 			}
 
-			System.out.printf("Player level: %s\n\n", player.getPlayerLevel());
+			player.getPlayerLevel();
 
 			System.out.print("Press 1 to playAgain, 2 to quit: ");
 			playAgain = input.nextInt();
