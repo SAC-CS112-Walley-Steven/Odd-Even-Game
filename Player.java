@@ -1,9 +1,9 @@
-
 public class Player
 {
 	private String name;
 	private int winCount;
 	private int playerLevel;
+	private String playerLev;
 
 	public Player (String name, int winCount, int playerLevel)
 	{
@@ -28,7 +28,7 @@ public class Player
 	{
 		return winCount;
 	}
-	public int getPlayerLevel()
+	public String getPlayerLevel()
 	{
 		if (winCount >= 0 && winCount <=5)
 			playerLevel = 1;
@@ -37,6 +37,14 @@ public class Player
 		else if (winCount > 10)
 			playerLevel = 3;
 
-		return playerLevel;
+		if (playerLevel ==1) playerLev="Amatuer";
+		if (playerLevel ==2) playerLev="Rookie";
+		if (playerLevel ==3) playerLev="Veteran";
+		
+		return playerLev;
+	}
+	public String getPlayerStats()
+	{
+		return String.format("Player Name: %s\nGames won: %d\nPlayer Level: %s", name, winCount, playerLev);
 	}
 }
