@@ -56,3 +56,5 @@ public class OddEvenGame{
 		System.out.printf("Name: %s\nWins: %d\nPlayer Level: %d", player.getName(), player.getWinCount(), player.getPlayerLevel());
 	}
 }
+
+//Hi Steven...please explain the objective and how you see this object of this class being used.
