@@ -45,6 +45,7 @@ public class Player
 	}
 	public String getPlayerStats()
 	{
+		// Please research into toString method.
 		return String.format("Player Name: %s\nGames won: %d\nPlayer Level: %s", name, winCount, playerLev);
 	}
 }
