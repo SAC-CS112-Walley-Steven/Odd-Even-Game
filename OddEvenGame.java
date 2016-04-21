@@ -10,10 +10,9 @@ public class OddEvenGame{
 		int playAgain = 0;
 
 		Player player = new Player ("Steve Walley", 0, 0);
-
+		
 		player.getPlayerLevel();
-
-		System.out.println(player.getPlayerStats());
+		System.out.print(player);
 
 		do 
 		{
@@ -55,6 +54,6 @@ public class OddEvenGame{
 		}
 		while (playAgain ==1);
 
-		System.out.println(player.getPlayerStats());
+		System.out.println(player);
 	}
 }
