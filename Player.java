@@ -11,6 +11,10 @@ public class Player
 		this.winCount = winCount;
 		this.playerLevel = playerLevel;
 	}
+	public String toString()
+	{
+		return String.format("Name: %s\nGames won: %d\nPlayer Level: %s\n", name, winCount, playerLev);
+	}
 
 	public void setName (String name)
 	{
@@ -43,9 +47,5 @@ public class Player
 		
 		return playerLev;
 	}
-	public String getPlayerStats()
-	{
-		// Please research into toString method.
-		return String.format("Player Name: %s\nGames won: %d\nPlayer Level: %s", name, winCount, playerLev);
-	}
+	
 }
